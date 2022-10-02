@@ -1,2 +1,8 @@
 server:
   port: 8762
+log:
+  basePath: D://applogs
+application:
+  name: gateWay
+logging:
+  config: classpath:logger/log4j3.xml

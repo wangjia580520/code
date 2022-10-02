@@ -13,3 +13,12 @@ http://127.0.0.1:8762/interface/Impl001
 http://127.0.0.1:8762/interface/Impl002
 http://127.0.0.1:8762/abstract/ab001
 http://127.0.0.1:8762/abstract/ab002
+
+4.添加日志输出
+4.1 按照日志级别输出到不同文件中使用log4j2.xml文件，修改application.yml里面的日志路径
+    请求url:http://127.0.0.1:8762/log1
+           http://127.0.0.1:8762/log2
+4.2 自定义输出日志，可以根据业务和代码输出到不同文件中，使用MarkFactory
+    修改application.yml中的日志路径
+    请求url:  http://127.0.0.1:8762/log3
+             http://127.0.0.1:8762/log4
