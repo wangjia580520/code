@@ -1,9 +1,6 @@
 package com.forezp.control;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.slf4j.Marker;
-import org.slf4j.MarkerFactory;
+import org.slf4j.*;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,12 +16,14 @@ public class LogControl2 {
     @GetMapping("log3")
     public String helloLog() {
         LOGGER.info(COLLECTED_MARKER1,"我是log3");
+        MDC.put("myTraceId", "123");
         return "123";
     }
 
     @GetMapping("log4")
     public String helloLog2() {
         LOGGER.error(COLLECTED_MARKER2,"我是log4");
+        MDC.put("myTraceId", "456");
         return "456";
     }
 }
