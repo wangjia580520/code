@@ -1,0 +1,49 @@
+# mapping文件
+{
+  "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas": 1
+  },
+  "mappings": {
+    "properties": {
+	  "userId": {
+        "type": "keyword"
+      },
+      "marks": {
+        "type": "keyword"
+      }
+    }
+  }
+}
+
+#准备数据
+http://127.0.0.1:9200/test/_doc/1/
+{ "userId":"111","marks": ["1","6"]}
+{ "userId":"112","marks": ["2","6"]}
+{ "userId":"113","marks": ["3","6"]}
+{ "userId":"114","marks": ["4","6"]}
+{ "userId":"115","marks": ["5","6"]}
+{ "userId":"116","marks": ["7","6"]}
+
+#数据过滤+聚合结果
+{
+  "size": 0,
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "term": {
+            "marks": "6"
+          }
+        }
+      ]
+    }
+  },
+  "aggs": {
+    "uidAggs": {
+      "terms": {
+        "field": "userId"
+      }
+    }
+  }
+}

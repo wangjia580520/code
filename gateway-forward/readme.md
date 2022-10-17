@@ -34,3 +34,5 @@ dataDir=D:\\Program Files (x86)\\zookeeper-3.4.12\\data
 dataLogDir=D:\\Program Files (x86)\\zookeeper-3.4.12\\log 
 
 需要注意的是，windows环境下路径标识使用 \\  或者 /
+
+4.5 elasticsearch的聚合+数组数据结合使用
