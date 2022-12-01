@@ -36,3 +36,8 @@ dataLogDir=D:\\Program Files (x86)\\zookeeper-3.4.12\\log
 需要注意的是，windows环境下路径标识使用 \\  或者 /
 
 4.5 elasticsearch的聚合+数组数据结合使用
+
+5.springboot整合ftp代码，后续可以使用hutools工具包，注意代码连接ftp需要开启 ftp服务器的被动模式
+参考地址：https://blog.csdn.net/L_xioabai_L/article/details/126064284
+https://blog.csdn.net/qq_48391148/article/details/124081167
+注意ftp上传文件如果文件类型是 文本 使用 ASCII 其他类型使用BINARY
