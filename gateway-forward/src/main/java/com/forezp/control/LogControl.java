@@ -16,14 +16,12 @@ public class LogControl {
     @GetMapping("log1")
     public String helloLog() {
         LOGGER.info("我是log1");
-        MDC.put("MDC1","MDC1");
-        return "123";
+        return "log1";
     }
 
     @GetMapping("log2")
     public String helloLog2() {
         LOGGER.error("我是log2");
-        MDC.put("MDC2","MDC2");
-        return "456";
+        return "log2";
     }
 }

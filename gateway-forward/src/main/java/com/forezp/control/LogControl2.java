@@ -15,15 +15,17 @@ public class LogControl2 {
 
     @GetMapping("log3")
     public String helloLog() {
+        // mdc 里面的key 在log4j3的日志输出格式里面，必须唯一对应
+        MDC.put("traceId", "我是交易id1");
         LOGGER.info(COLLECTED_MARKER1,"我是log3");
-        MDC.put("myTraceId", "123");
-        return "123";
+        return "log3";
     }
 
     @GetMapping("log4")
     public String helloLog2() {
+        MDC.put("traceId", "我是交易id2");
         LOGGER.error(COLLECTED_MARKER2,"我是log4");
-        MDC.put("myTraceId", "456");
-        return "456";
+        LOGGER.error(COLLECTED_MARKER2,"我是log4.1");
+        return "log4";
     }
 }
