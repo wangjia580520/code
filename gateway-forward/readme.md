@@ -22,7 +22,7 @@ http://127.0.0.1:8762/abstract/ab002
     修改application.yml中的日志路径
     请求url:  http://127.0.0.1:8762/log3
              http://127.0.0.1:8762/log4
-    其中的mdc使用，再下一次打印日志的时间触发，同一个线程内共享，如果需要子线程也获取数据，需要实现继承，参数的设置一般也是在切面或者过滤器中设置。
+    其中的mdc使用，再下一次打印日志的时间触发，同一个线程内共享，如果需要子线程也获取数据，需要实现继承，如果采用http请求，到下一服务中，将具体数据封装到header,在服务接收的时候使用过滤器，或者切面重新获取放置。
 4.3 mysql数据库导出数据和导入数据
 导出结构--no-data 有就是只是结构，没有就是数据和结构都有
 mysqldump -h127.0.0.1 -uroot -p123456 -P3306 --set-gtid-purged=OFF --default-character-set=utf-8 --hex-blob --routines --triggers --no-data --databases ciyou --tables admin grade > ajia.sql
