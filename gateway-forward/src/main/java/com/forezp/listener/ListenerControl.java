@@ -6,6 +6,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 
+/***
+ * 触发监听方式
+ */
 @RestController
 public class ListenerControl {
     @Resource
