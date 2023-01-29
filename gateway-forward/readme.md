@@ -42,3 +42,5 @@ dataLogDir=D:\\Program Files (x86)\\zookeeper-3.4.12\\log
 参考地址：https://blog.csdn.net/L_xioabai_L/article/details/126064284
 https://blog.csdn.net/qq_48391148/article/details/124081167
 注意ftp上传文件如果文件类型是 文本 使用 ASCII 其他类型使用BINARY
+
+6.springboot使用ApplicationListener监听器
