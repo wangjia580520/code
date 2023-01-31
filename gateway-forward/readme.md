@@ -44,3 +44,5 @@ https://blog.csdn.net/qq_48391148/article/details/124081167
 注意ftp上传文件如果文件类型是 文本 使用 ASCII 其他类型使用BINARY
 
 6.springboot使用ApplicationListener监听器
+
+7.使用注解对具体字段进行操作，比如敏感字段脱敏等 valuefilter
