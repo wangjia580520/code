@@ -6,11 +6,13 @@ import com.forezp.service.RequestAbstractService;
 import com.forezp.service.RequestService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication(scanBasePackages = {"com.forezp.*"})
+@ServletComponentScan
 @RestController
 public class
 
