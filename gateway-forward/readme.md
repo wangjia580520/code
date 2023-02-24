@@ -48,3 +48,5 @@ https://blog.csdn.net/qq_48391148/article/details/124081167
 7.使用注解对具体字段进行操作，比如敏感字段脱敏等 valuefilter
 
 8.过滤器和拦截器的使用，还有webmvcconfigurer的使用
+
+9.json字符串转泛型类型的数据
