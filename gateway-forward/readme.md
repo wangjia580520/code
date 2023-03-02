@@ -50,3 +50,7 @@ https://blog.csdn.net/qq_48391148/article/details/124081167
 8.过滤器和拦截器的使用，还有webmvcconfigurer的使用
 
 9.json字符串转泛型类型的数据
+
+10. 实体类转字符串 和字符串转实体 fastJSON和jackJSON的区别，
+fastJSON 只按照实体字段去转换，jackJSON，优先使用@JsonProperty注解去转换，
+没有此注解才会按照字段来转换。
