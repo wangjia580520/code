@@ -54,3 +54,5 @@ https://blog.csdn.net/qq_48391148/article/details/124081167
 10. 实体类转字符串 和字符串转实体 fastJSON和jackJSON的区别，
 fastJSON 只按照实体字段去转换，jackJSON，优先使用@JsonProperty注解去转换，
 没有此注解才会按照字段来转换。
+
+11.文件流简单案例
